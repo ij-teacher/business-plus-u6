@@ -2,7 +2,7 @@
 
 Website: https://ij-teacher.github.io/business-plus-u6/
 
-Bilingual teaching website based on the supplied six-slide PowerPoint. Includes comparative grammar, travel speaking, Track 32 audio, Richmond Hotel reading, twelve supplementary practice questions, explanations and printable QR code.
+English-only teaching website based on the supplied six-slide PowerPoint. Includes comparative grammar, travel speaking, Track 32 audio, Richmond Hotel reading, twelve supplementary practice questions, explanations and printable QR code.
 
 ## Files
 - index.html, style.css, app.js: website

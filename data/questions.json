@@ -8,7 +8,7 @@
       "oldest"
     ],
     "answer": 1,
-    "explanation": "比較兩人的年齡，用 older than。",
+    "explanation": "Use older than to compare the ages of two people.",
     "source": "Supplementary practice based on Unit 6 grammar and speaking"
   },
   {
@@ -20,7 +20,7 @@
       "more comfortable"
     ],
     "answer": 2,
-    "explanation": "comfortable 是較長的形容詞，使用 more comfortable。",
+    "explanation": "Comfortable is a longer adjective, so use more comfortable.",
     "source": "Supplementary practice based on Unit 6 grammar and speaking"
   },
   {
@@ -32,7 +32,7 @@
       "more big"
     ],
     "answer": 1,
-    "explanation": "big 的比較級為 bigger，字尾 g 要重複。",
+    "explanation": "The comparative of big is bigger. Double the final g.",
     "source": "Supplementary practice based on Unit 6 grammar and speaking"
   },
   {
@@ -44,7 +44,7 @@
       "best"
     ],
     "answer": 0,
-    "explanation": "good 的不規則比較級為 better。",
+    "explanation": "Better is the irregular comparative of good.",
     "source": "Supplementary practice based on Unit 6 grammar and speaking"
   },
   {
@@ -56,7 +56,7 @@
       "expensiver"
     ],
     "answer": 1,
-    "explanation": "比較三間飯店中的最高程度，用 the most expensive。",
+    "explanation": "Use the most expensive to identify the highest price among three hotels.",
     "source": "Supplementary practice based on Unit 6 grammar and speaking"
   },
   {
@@ -68,7 +68,7 @@
       "large"
     ],
     "answer": 2,
-    "explanation": "as ... as 中間使用形容詞原形 large。",
+    "explanation": "Use the base adjective large between as and as.",
     "source": "Supplementary practice based on Unit 6 grammar and speaking"
   },
   {
@@ -80,7 +80,7 @@
       "You should taking the train."
     ],
     "answer": 0,
-    "explanation": "should 後接動詞原形，不加 to。",
+    "explanation": "Should takes the base verb without to.",
     "source": "Supplementary practice based on Unit 6 grammar and speaking"
   },
   {
@@ -92,7 +92,7 @@
       "D"
     ],
     "answer": 0,
-    "explanation": "A 說房間內的 Wi-Fi signal was not good。",
+    "explanation": "Reviewer A says the Wi-Fi signal in the room was not good.",
     "source": "Based on slide 6, reading p. 51"
   },
   {
@@ -104,7 +104,7 @@
       "C"
     ],
     "answer": 1,
-    "explanation": "B 提到 gym and the rooftop pool。",
+    "explanation": "Reviewer B mentions the gym and the rooftop pool.",
     "source": "Based on slide 6, reading p. 51"
   },
   {
@@ -116,7 +116,7 @@
       "D"
     ],
     "answer": 1,
-    "explanation": "C 明確說：I don’t recommend this hotel。",
+    "explanation": "Reviewer C explicitly says: I don’t recommend this hotel.",
     "source": "Based on slide 6, reading p. 51"
   },
   {
@@ -128,7 +128,7 @@
       "Expensive but good"
     ],
     "answer": 2,
-    "explanation": "D 的評論為：The laundry service is expensive but good。",
+    "explanation": "Reviewer D says the laundry service is expensive but good.",
     "source": "Based on slide 6, reading p. 51"
   },
   {
@@ -140,7 +140,7 @@
       "The breakfast"
     ],
     "answer": 0,
-    "explanation": "A 說 central location is ideal，C 說唯一的優點是 location。",
+    "explanation": "Reviewer A praises the central location. Reviewer C says the only good thing is the location.",
     "source": "Based on slide 6, reading p. 51"
   }
 ]
