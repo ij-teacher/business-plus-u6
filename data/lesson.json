@@ -82,12 +82,14 @@
   ],
   "speaking": {
     "questions": [
-      "Where do you like to spend your vacations?",
-      "What kind of vacation do you like?",
-      "How do you like to travel?",
-      "What sort of place do you like to stay?"
+      "Where do you like to spend your vacation? Why?",
+      "What do you like doing on vacation? Why?",
+      "How do you like to travel? Why?",
+      "Where do you like to stay? Why?",
+      "What would you suggest for your partner?"
     ],
-    "audio": "materials/track-32.mp3"
+    "audio": "materials/track-32.mp3",
+    "activity": "Travel partners: ask about preferences, explain reasons using because, give advice with should or could, and report back."
   },
   "storage": {
     "course": "GitHub repository",
