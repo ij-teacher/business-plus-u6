@@ -1,0 +1,71 @@
+{
+  "source": "Business Plus-U6.pdf, country comparison chart; answer key checked against Teacher’s Manual 1, printed page 32",
+  "countries": [
+    {
+      "name": "Indonesia",
+      "size": "about 2 million sq km",
+      "population": "240 million",
+      "density": "130",
+      "age": "30 years",
+      "rent": "Jakarta: $700 per month"
+    },
+    {
+      "name": "Singapore",
+      "size": "about 700 sq km",
+      "population": "5.3 million",
+      "density": "7,800",
+      "age": "33 years",
+      "rent": "Singapore: $1,800 per month"
+    },
+    {
+      "name": "Thailand",
+      "size": "about 500,000 sq km",
+      "population": "70 million",
+      "density": "140",
+      "age": "35 years",
+      "rent": "Bangkok: $800 per month"
+    }
+  ],
+  "questions": [
+    {
+      "statement": "Thailand is bigger than Indonesia.",
+      "answer": false,
+      "explanation": "Thailand is smaller than Indonesia. / Indonesia is bigger than Thailand."
+    },
+    {
+      "statement": "The population of Indonesia is the smallest.",
+      "answer": false,
+      "explanation": "The population of Indonesia is the biggest. / The population of Singapore is the smallest."
+    },
+    {
+      "statement": "Thailand is more crowded than Indonesia.",
+      "answer": true,
+      "explanation": "Thailand has 140 people per sq km; Indonesia has 130."
+    },
+    {
+      "statement": "The population of Singapore is younger than the population of Indonesia.",
+      "answer": false,
+      "explanation": "The population of Singapore is older than the population of Indonesia. / The population of Indonesia is younger than the population of Singapore."
+    },
+    {
+      "statement": "An apartment in Bangkok is cheaper than an apartment in Jakarta.",
+      "answer": false,
+      "explanation": "An apartment in Bangkok is more expensive than an apartment in Jakarta. / An apartment in Jakarta is cheaper than an apartment in Bangkok."
+    },
+    {
+      "statement": "The most expensive apartment is in Jakarta.",
+      "answer": false,
+      "explanation": "The most expensive apartment is in Singapore."
+    },
+    {
+      "statement": "The population of Thailand is the youngest.",
+      "answer": false,
+      "explanation": "The population of Thailand is the oldest. / The population of Indonesia is the youngest."
+    },
+    {
+      "statement": "The most crowded country is Singapore.",
+      "answer": true,
+      "explanation": "Singapore has 7,800 people per sq km, the highest figure in the chart."
+    }
+  ]
+}
