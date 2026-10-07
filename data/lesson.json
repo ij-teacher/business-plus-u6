@@ -1,0 +1,96 @@
+{
+  "title": "Business Plus 1 Unit 6: Out and about",
+  "source": "Business Plus-U6 (國貿).pptx",
+  "pages": [
+    46,
+    47,
+    48,
+    51
+  ],
+  "notes": "Original materials preserved. Practice questions, bilingual explanations, advice examples and lesson pacing are supplementary teaching content.",
+  "reviews": [
+    {
+      "id": "A",
+      "title": "Location and restaurant, but weak Wi-Fi",
+      "text": "I agree with everything you wrote in your review of the Richmond Hotel. The central location is ideal for business travelers. The hotel restaurant is first class. Unfortunately, when I stayed there, the Wi-Fi signal in my room was not good, and this was a great disadvantage."
+    },
+    {
+      "id": "B",
+      "title": "Facilities and comfortable rooms",
+      "text": "A very nice hotel with a fantastic staff and excellent facilities, including large, bright conference rooms. The gym and the rooftop pool are great to relax in after a day’s work. As you said in your review, the rooms are large and comfortable with high-speed internet connections and satellite TV. I travel a lot, but staying at the Richmond is always special."
+    },
+    {
+      "id": "C",
+      "title": "A disappointing business trip",
+      "text": "I don’t agree with your review at all! I spent two nights at the Richmond on my last business trip to Jakarta. My room was small, and the bathroom was not very clean. The air conditioning was noisy and the breakfast poor. I used the gym, but it was very small and crowded. I don’t recommend this hotel. The only good thing about it is the location."
+    },
+    {
+      "id": "D",
+      "title": "Friendly service and value for money",
+      "text": "The Richmond is a large hotel with an unattractive lobby. But the staff are very friendly and the service excellent. I met clients for lunch and dinner in the Executive Lounge on the top floor, and we all agreed that the food was delicious. The laundry service is expensive but good. Not the best hotel I know, but it’s good value for the money."
+    }
+  ],
+  "vocabulary": [
+    [
+      "central location",
+      "市中心的位置"
+    ],
+    [
+      "facilities",
+      "設施"
+    ],
+    [
+      "conference room",
+      "會議室"
+    ],
+    [
+      "rooftop pool",
+      "屋頂泳池"
+    ],
+    [
+      "crowded",
+      "擁擠的"
+    ],
+    [
+      "air conditioning",
+      "空調"
+    ],
+    [
+      "recommend",
+      "推薦"
+    ],
+    [
+      "laundry service",
+      "洗衣服務"
+    ],
+    [
+      "value for money",
+      "物有所值"
+    ]
+  ],
+  "people": [
+    {
+      "name": "Akio",
+      "age": 22,
+      "height": 1.7
+    },
+    {
+      "name": "Naoko",
+      "age": 20,
+      "height": 1.55
+    }
+  ],
+  "speaking": {
+    "questions": [
+      "Where do you like to spend your vacations?",
+      "What kind of vacation do you like?",
+      "How do you like to travel?",
+      "What sort of place do you like to stay?"
+    ],
+    "audio": "materials/track-32.mp3"
+  },
+  "storage": {
+    "course": "GitHub repository",
+    "studentResponses": "Browser localStorage; manual JSON export only"
+  }
+}

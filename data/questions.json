@@ -1,0 +1,146 @@
+[
+  {
+    "id": "u6-1",
+    "prompt": "Akio is 22. Naoko is 20. Akio is ___ than Naoko.",
+    "options": [
+      "old",
+      "older",
+      "oldest"
+    ],
+    "answer": 1,
+    "explanation": "比較兩人的年齡，用 older than。",
+    "source": "Supplementary practice based on Unit 6 grammar and speaking"
+  },
+  {
+    "id": "u6-2",
+    "prompt": "This hotel is ___ than that one. (comfortable)",
+    "options": [
+      "comfortabler",
+      "most comfortable",
+      "more comfortable"
+    ],
+    "answer": 2,
+    "explanation": "comfortable 是較長的形容詞，使用 more comfortable。",
+    "source": "Supplementary practice based on Unit 6 grammar and speaking"
+  },
+  {
+    "id": "u6-3",
+    "prompt": "Choose the correct comparative form of “big”.",
+    "options": [
+      "biger",
+      "bigger",
+      "more big"
+    ],
+    "answer": 1,
+    "explanation": "big 的比較級為 bigger，字尾 g 要重複。",
+    "source": "Supplementary practice based on Unit 6 grammar and speaking"
+  },
+  {
+    "id": "u6-4",
+    "prompt": "Naoko is a ___ student than Akio. (good)",
+    "options": [
+      "better",
+      "gooder",
+      "best"
+    ],
+    "answer": 0,
+    "explanation": "good 的不規則比較級為 better。",
+    "source": "Supplementary practice based on Unit 6 grammar and speaking"
+  },
+  {
+    "id": "u6-5",
+    "prompt": "This is ___ hotel of the three. (expensive)",
+    "options": [
+      "more expensive",
+      "the most expensive",
+      "expensiver"
+    ],
+    "answer": 1,
+    "explanation": "比較三間飯店中的最高程度，用 the most expensive。",
+    "source": "Supplementary practice based on Unit 6 grammar and speaking"
+  },
+  {
+    "id": "u6-6",
+    "prompt": "Complete: This room is as ___ as that room.",
+    "options": [
+      "larger",
+      "largest",
+      "large"
+    ],
+    "answer": 2,
+    "explanation": "as ... as 中間使用形容詞原形 large。",
+    "source": "Supplementary practice based on Unit 6 grammar and speaking"
+  },
+  {
+    "id": "u6-7",
+    "prompt": "Which sentence gives advice correctly?",
+    "options": [
+      "You should take the train.",
+      "You should to take the train.",
+      "You should taking the train."
+    ],
+    "answer": 0,
+    "explanation": "should 後接動詞原形，不加 to。",
+    "source": "Supplementary practice based on Unit 6 grammar and speaking"
+  },
+  {
+    "id": "u6-8",
+    "prompt": "Which reviewer reports a weak Wi-Fi signal?",
+    "options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "A 說房間內的 Wi-Fi signal was not good。",
+    "source": "Based on slide 6, reading p. 51"
+  },
+  {
+    "id": "u6-9",
+    "prompt": "Which reviewer mentions a rooftop pool?",
+    "options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer": 1,
+    "explanation": "B 提到 gym and the rooftop pool。",
+    "source": "Based on slide 6, reading p. 51"
+  },
+  {
+    "id": "u6-10",
+    "prompt": "Which reviewer does NOT recommend the hotel?",
+    "options": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 1,
+    "explanation": "C 明確說：I don’t recommend this hotel。",
+    "source": "Based on slide 6, reading p. 51"
+  },
+  {
+    "id": "u6-11",
+    "prompt": "What does reviewer D say about the laundry service?",
+    "options": [
+      "Cheap and poor",
+      "Free and excellent",
+      "Expensive but good"
+    ],
+    "answer": 2,
+    "explanation": "D 的評論為：The laundry service is expensive but good。",
+    "source": "Based on slide 6, reading p. 51"
+  },
+  {
+    "id": "u6-12",
+    "prompt": "What do reviewers A and C both appreciate?",
+    "options": [
+      "The location",
+      "The gym",
+      "The breakfast"
+    ],
+    "answer": 0,
+    "explanation": "A 說 central location is ideal，C 說唯一的優點是 location。",
+    "source": "Based on slide 6, reading p. 51"
+  }
+]
