@@ -94,5 +94,56 @@
   "storage": {
     "course": "GitHub repository",
     "studentResponses": "Browser localStorage; manual JSON export only"
-  }
+  },
+  "scanning": [
+    {
+      "prompt": "The food in the hotel.",
+      "answers": [
+        "A",
+        "C",
+        "D"
+      ],
+      "explanation": "A praises the first-class hotel restaurant. C says the breakfast was poor. D says the food in the Executive Lounge was delicious."
+    },
+    {
+      "prompt": "The location of the hotel.",
+      "answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "A says the central location is ideal for business travelers. C says the location was the only good thing about the hotel."
+    },
+    {
+      "prompt": "The hotel staff.",
+      "answers": [
+        "B",
+        "D"
+      ],
+      "explanation": "B describes the staff as fantastic. D says the staff are very friendly."
+    },
+    {
+      "prompt": "The gym.",
+      "answers": [
+        "B",
+        "C"
+      ],
+      "explanation": "B says the gym is great for relaxing after work. C says the gym was very small and crowded."
+    },
+    {
+      "prompt": "The size of the rooms.",
+      "answers": [
+        "B",
+        "C"
+      ],
+      "explanation": "B says the guest rooms are large and comfortable. C says the room was small."
+    },
+    {
+      "prompt": "Telecommunications.",
+      "answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "A reports a weak Wi-Fi signal. B mentions high-speed internet connections and satellite TV."
+    }
+  ]
 }

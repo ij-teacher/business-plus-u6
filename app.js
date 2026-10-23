@@ -9,13 +9,44 @@ function buildTrip(){const d=$('destination').value,t=$('transport').value,s=$('
 $('trip-form').addEventListener('submit',e=>{e.preventDefault();buildTrip();});buildTrip();
 async function init(){try{const responses=await Promise.all([fetch('data/lesson.json'),fetch('data/questions.json')]);if(responses.some(r=>!r.ok))throw Error('load');const [lesson,q]=await Promise.all(responses.map(r=>r.json()));questions=q;
  for(const review of lesson.reviews){const a=document.createElement('article'),label=document.createElement('div'),body=document.createElement('div'),h=document.createElement('h3'),p=document.createElement('p');label.className='review-label';label.textContent=review.id;h.textContent=review.title;p.textContent=review.text;body.append(h,p);a.append(label,body);$('reviews').append(a);}
+ initReading(lesson.scanning);
  for(const [word,definition] of lesson.vocabulary){const p=document.createElement('p'),b=document.createElement('b');b.textContent=word;p.append(b,document.createElement('br'),document.createTextNode(definition));$('vocabulary').append(p);}
  q.forEach((item,i)=>{const f=document.createElement('fieldset'),l=document.createElement('legend');l.textContent=`${i+1}. ${item.prompt}`;f.append(l);item.options.forEach((option,j)=>{const label=document.createElement('label'),input=document.createElement('input');input.type='radio';input.name='q'+i;input.value=String(j);input.required=true;label.append(input,document.createTextNode(option));f.append(label);});const feedback=document.createElement('p');feedback.id='feedback-'+i;feedback.className='feedback';feedback.hidden=true;f.append(feedback);$('questions').append(f);});
  try{const saved=JSON.parse(localStorage.getItem('business-plus-u6-result'));if(saved&&Array.isArray(saved.answers)&&saved.answers.length===q.length){saved.answers.forEach((answer,i)=>{const input=document.querySelector(`input[name="q${i}"][value="${answer}"]`);if(input)input.checked=true;});$('score').textContent='Your previous answers have been restored. Submit to review the explanations.';}}catch{}
  }catch{$('load-error').hidden=false;$('load-error').textContent='The lesson could not be loaded. Refresh the page and make sure you are using the website URL.';$('quiz').querySelector('[type=submit]').disabled=true;}}
 $('quiz').addEventListener('submit',e=>{e.preventDefault();const fd=new FormData(e.currentTarget);let total=0;const answers=questions.map((q,i)=>{const a=Number(fd.get('q'+i)),ok=a===q.answer;if(ok)total++;const f=$('feedback-'+i);f.hidden=false;f.className='feedback '+(ok?'correct':'incorrect');f.textContent=(ok?'✓ Correct.':'Try again. Correct answer: '+q.options[q.answer]+'.')+' '+q.explanation;return a;});lastResult={unit:'Business Plus 1 Unit 6',completedAt:new Date().toISOString(),score:total,total:questions.length,answers};$('score').textContent=`Your score: ${total} / ${questions.length}. Read each explanation, then try again.`;try{localStorage.setItem('business-plus-u6-result',JSON.stringify(lastResult));}catch{$('score').textContent+=' This browser cannot save your answers.';}$('score').scrollIntoView({behavior:'smooth',block:'center'});});
-$('reset').addEventListener('click',()=>{HTMLFormElement.prototype.reset.call($('quiz'));document.querySelectorAll('.feedback').forEach(f=>f.hidden=true);$('score').textContent='Your answers have been cleared. You can start again.';lastResult=null;try{localStorage.removeItem('business-plus-u6-result');}catch{}});
+$('reset').addEventListener('click',()=>{HTMLFormElement.prototype.reset.call($('quiz'));$('quiz').querySelectorAll('.feedback').forEach(f=>f.hidden=true);$('score').textContent='Your answers have been cleared. You can start again.';lastResult=null;try{localStorage.removeItem('business-plus-u6-result');}catch{}});
 init();
+
+function initReading(items){
+ const form=$('reading-form'),status=$('reading-score');
+ items.forEach((item,i)=>{
+  const field=document.createElement('fieldset'),legend=document.createElement('legend');
+  legend.textContent=(i+1)+'. '+item.prompt;field.append(legend);
+  const choices=document.createElement('div');choices.className='reading-choices';
+  for(const letter of ['A','B','C','D']){
+   const label=document.createElement('label'),input=document.createElement('input');
+   input.type='checkbox';input.name='reading'+i;input.value=letter;
+   label.append(input,document.createTextNode(letter));choices.append(label);
+  }
+  const feedback=document.createElement('p');feedback.id='reading-feedback-'+i;feedback.className='feedback';feedback.hidden=true;
+  field.append(choices,feedback);$('reading-questions').append(field);
+ });
+ form.addEventListener('submit',event=>{
+  event.preventDefault();const answers=new FormData(form);let score=0,unanswered=0;
+  items.forEach((item,i)=>{
+   const selected=answers.getAll('reading'+i),correct=selected.length===item.answers.length&&item.answers.every(letter=>selected.includes(letter));
+   if(!selected.length)unanswered++;if(correct)score++;
+   const feedback=$('reading-feedback-'+i);feedback.hidden=false;feedback.className='feedback '+(correct?'correct':'incorrect');
+   feedback.textContent=(correct?'✓ Correct. ':!selected.length?'No answer selected. Correct answers: '+item.answers.join(', ')+'. ':'Correct answers: '+item.answers.join(', ')+'. ')+item.explanation;
+  });
+  status.hidden=false;status.textContent='Reading comprehension score: '+score+' / '+items.length+'. '+(unanswered?unanswered+' unanswered. ':'')+'Select every matching comment for each topic. Read the evidence above, then try again.';
+  status.scrollIntoView({block:'center',behavior:'smooth'});
+ });
+ $('reading-reset').addEventListener('click',()=>{
+  HTMLFormElement.prototype.reset.call(form);form.querySelectorAll('.feedback').forEach(p=>p.hidden=true);status.hidden=true;status.textContent='';
+ });
+}
 
 async function initListening(){try{const response=await fetch('data/track32.json');if(!response.ok)throw Error('load');const exercise=await response.json();exercise.items.forEach((item,i)=>{const field=document.createElement('fieldset'),legend=document.createElement('legend');legend.textContent=(i+1)+'. '+item.statement;field.append(legend);for(const choice of ['Do','Don’t']){const label=document.createElement('label'),input=document.createElement('input');input.type='radio';input.name='listen'+i;input.value=choice;input.required=true;label.append(input,document.createTextNode(choice));field.append(label);}const feedback=document.createElement('p');feedback.className='feedback';feedback.hidden=true;feedback.id='listen-feedback-'+i;field.append(feedback);$('listening-questions').append(field);});$('listening-form').addEventListener('submit',event=>{event.preventDefault();const answers=new FormData(event.currentTarget);let score=0;exercise.items.forEach((item,i)=>{const correct=answers.get('listen'+i)===item.answer;if(correct)score++;const feedback=$('listen-feedback-'+i);feedback.hidden=false;feedback.className='feedback '+(correct?'correct':'incorrect');feedback.textContent=correct?'✓ Correct.':'Correct answer: '+item.answer+'.';});$('listening-score').hidden=false;$('listening-score').textContent='Your listening score: '+score+' / '+exercise.items.length;});$('listening-reset').addEventListener('click',()=>{HTMLFormElement.prototype.reset.call($('listening-form'));$('listening-score').hidden=true;$('listening-form').querySelectorAll('.feedback').forEach(p=>p.hidden=true);});}catch{$('listening-score').hidden=false;$('listening-score').textContent='The listening exercise could not be loaded. Please refresh the page.';$('listening-form').querySelector('[type=submit]').disabled=true;}}
 initListening();
