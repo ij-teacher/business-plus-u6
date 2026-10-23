@@ -1,0 +1,62 @@
+{
+  "title": "Word Practice",
+  "instructions": "Complete each sentence using the word bank. Use each word once. Change the word form if needed.",
+  "items": [
+    {
+      "sentence": "The hotel ___ was very polite and helped us check in quickly.",
+      "answer": "staff"
+    },
+    {
+      "sentence": "We had a ___ vacation and enjoyed every moment of it.",
+      "answer": "fantastic"
+    },
+    {
+      "sentence": "This sofa is so ___ that I could easily fall asleep on it.",
+      "answer": "comfortable"
+    },
+    {
+      "sentence": "___, the outdoor concert was canceled because of heavy rain.",
+      "answer": "unfortunately"
+    },
+    {
+      "sentence": "The subway car was so ___ during rush hour that there was barely room to stand.",
+      "answer": "crowded"
+    },
+    {
+      "sentence": "The new bakery is in a great ___ right near the bus station.",
+      "answer": "location"
+    },
+    {
+      "sentence": "Before buying a new laptop, I always read online customer ___.",
+      "answer": "reviews"
+    },
+    {
+      "sentence": "Can you ___ a good book for me to read this weekend?",
+      "answer": "recommend"
+    },
+    {
+      "sentence": "A high price is the main ___ of buying a brand-new sports car.",
+      "answer": "disadvantage"
+    },
+    {
+      "sentence": "The old, dusty furniture made the living room look dull and ___.",
+      "answer": "unattractive"
+    },
+    {
+      "sentence": "Warm and sunny weather is ___ for a day at the beach.",
+      "answer": "ideal"
+    },
+    {
+      "sentence": "The traffic light gave a green ___ for the cars to go.",
+      "answer": "signal"
+    },
+    {
+      "sentence": "Business leaders from different countries attended the international ___.",
+      "answer": "conference"
+    },
+    {
+      "sentence": "The sports center is a modern ___ with a swimming pool and gym.",
+      "answer": "facility"
+    }
+  ]
+}
