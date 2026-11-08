@@ -1,9 +1,6 @@
 'use strict';
 let questions=[],lastResult=null;
 const $=id=>document.getElementById(id);
-const examples={age:'Akio is older than Naoko.',height:'Akio is taller than Naoko.',study:'Naoko is a better student than Akio.',driving:'Naoko is a better driver than Akio.'};
-function compare(){$('comparison-result').textContent=examples[$('comparison').value];}
-$('comparison').addEventListener('change',compare);compare();
 $('projector').addEventListener('click',()=>{const on=document.body.classList.toggle('projector');$('projector').textContent=on?'Standard mode':'Projector mode';$('projector').setAttribute('aria-pressed',String(on));});
 function buildTrip(){const d=$('destination').value,t=$('transport').value,s=$('stay').value;const destination=d==='the beach'?'at the beach':'in '+d;const transport=t==='on foot'?'on foot':'by '+t;const stay=s==='a campsite'?'at a campsite':s==='friends'?'with friends':'in '+s;$('trip-result').textContent='I like to spend my vacation '+destination+' because it is '+$('reason').value+'.\nI '+$('preference').value+' '+$('activity').value+' because I like to '+$('activity-reason').value+'.\nI like to travel '+transport+' because it is '+$('transport-reason').value+'.\nI like to stay '+stay+' because it is '+$('stay-reason').value+'.';}
 $('trip-form').addEventListener('submit',e=>{e.preventDefault();buildTrip();});buildTrip();
@@ -70,3 +67,4 @@ async function initPlaces(){
  }catch{status.hidden=false;status.textContent='The place comparison exercise could not be loaded. Please refresh the page.';form.querySelector('[type=submit]').disabled=true;}
 }
 initPlaces();
+
