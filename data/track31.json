@@ -1,0 +1,121 @@
+{
+  "title": "Track 31 · Customer service in a hotel",
+  "source": "Supplied Business Plus-U6 T31-worksheet.pdf; answer key verified against the course transcript, printed page 104",
+  "conversations": [
+    {
+      "title": "Conversation 1",
+      "description": "Jenny Bond changes her reservation.",
+      "answers": [
+        "single room",
+        "three",
+        "nineteenth",
+        "twenty-first",
+        "two",
+        "twenty-fourth",
+        "double room",
+        "bigger",
+        "more",
+        "comfortable",
+        "more",
+        "expensive",
+        "most",
+        "biggest",
+        "by",
+        "email"
+      ],
+      "lines": [
+        [
+          "Lucy",
+          "The Plaza Hotel. How can I help you?"
+        ],
+        [
+          "Caller 1",
+          "Hello. My name is Jenny Bond. I have a reservation for a {{0}} for {{1}} nights in March. From the {{2}} to the {{3}}, leaving on the twenty-second."
+        ],
+        [
+          "Lucy",
+          "That’s right, Ms. Bond. I have your reservation here."
+        ],
+        [
+          "Caller 1",
+          "Yes, well I would like to stay for {{4}} more nights and leave on the {{5}}. Is that possible?"
+        ],
+        [
+          "Lucy",
+          "Let me see ... mmm... oh, I’m sorry, we don’t have a single room on those dates. I can offer you a {{6}}. The double room is {{7}} and {{8}} {{9}} than a single room, but of course, it’s {{10}} {{11}}."
+        ],
+        [
+          "Caller 1",
+          "How much does it cost?"
+        ],
+        [
+          "Lucy",
+          "Well, I can give you one of our {{12}} expensive rooms at a special price for the five nights. That would be $600. It’s one of our {{13}} rooms, and it’s very comfortable."
+        ],
+        [
+          "Caller 1",
+          "Well, it’s very expensive, but OK. Can you confirm the reservation {{14}} {{15}}, please?"
+        ],
+        [
+          "Lucy",
+          "Yes, of course, Ms. Bond. We have your email address here."
+        ],
+        [
+          "Caller",
+          "Thank you very much. Goodbye."
+        ]
+      ]
+    },
+    {
+      "title": "Conversation 2",
+      "description": "Anton Wijaya informs the hotel about his late arrival.",
+      "answers": [
+        "two",
+        "Sunday",
+        "fourteenth",
+        "two",
+        "10 PM",
+        "midnight",
+        "twelve-thirty"
+      ],
+      "lines": [
+        [
+          "Lucy",
+          "Good morning. The Plaza Hotel. How can I help you?"
+        ],
+        [
+          "Caller 2",
+          "Good morning. My name is Anton Wijaya. I have {{0}} reservations for this Friday, leaving {{1}}. One is for me and one is for Dr. Little."
+        ],
+        [
+          "Lucy",
+          "Just one moment, Mr. Wijaya, let me just check that. Yes, I have it here. Arriving Friday, the {{2}} for {{3}} nights. Is there a problem?"
+        ],
+        [
+          "Caller 2",
+          "Not really. It’s just that I’ve changed my plans, and I’m taking a later flight. We land at {{4}}, so I can’t be at the hotel before {{5}}."
+        ],
+        [
+          "Lucy",
+          "That’s not a problem, Mr. Wijaya. We have someone at reception twenty-four hours a day."
+        ],
+        [
+          "Caller 2",
+          "Oh, that’s good. I can take a taxi from the airport, so I expect to arrive at {{6}} at the latest."
+        ],
+        [
+          "Lucy",
+          "That’s fine, Mr. Wijaya. I can inform my colleagues of your late arrival."
+        ],
+        [
+          "Caller 2",
+          "Thanks a lot. By the way, Dr. Little’s flight is not as late as mine. He’ll be there earlier than me."
+        ],
+        [
+          "Lucy",
+          "OK. Well, have a good flight, Mr. Wijaya."
+        ]
+      ]
+    }
+  ]
+}
