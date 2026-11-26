@@ -14,7 +14,7 @@ function buildTrip() {
   };
 
   $('trip-result').textContent = [
-    `For my vacation, I’d head to ${destination} because it’s ${$('reason').value}.`,
+    `For my vacation, I’d like to go to ${destination} because it’s ${$('reason').value}.`,
     `I ${$('preference').value} ${$('activity').value} because I can ${$('activity-reason').value}.`,
     `When I travel, I prefer to go ${travel} because it’s ${$('transport-reason').value}.`,
     `I’d choose to stay ${stays[accommodation]} because it’s ${$('stay-reason').value}.`
