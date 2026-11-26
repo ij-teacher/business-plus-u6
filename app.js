@@ -1,7 +1,25 @@
 'use strict';
 const $=id=>document.getElementById(id);
 $('projector').addEventListener('click',()=>{const on=document.body.classList.toggle('projector');$('projector').textContent=on?'Standard mode':'Projector mode';$('projector').setAttribute('aria-pressed',String(on));});
-function buildTrip(){const d=$('destination').value,t=$('transport').value,s=$('stay').value;const destination=d==='the beach'?'at the beach':'in '+d;const transport=t==='on foot'?'on foot':'by '+t;const stay=s==='a campsite'?'at a campsite':s==='friends'?'with friends':'in '+s;$('trip-result').textContent='I like to spend my vacation '+destination+' because it is '+$('reason').value+'.\nI '+$('preference').value+' '+$('activity').value+' because I like to '+$('activity-reason').value+'.\nI like to travel '+transport+' because it is '+$('transport-reason').value+'.\nI like to stay '+stay+' because it is '+$('stay-reason').value+'.';}
+function buildTrip() {
+  const destination = $('destination').value;
+  const transport = $('transport').value;
+  const accommodation = $('stay').value;
+  const travel = transport === 'on foot' ? 'on foot' : `by ${transport}`;
+  const stays = {
+    'a hotel': 'in a hotel',
+    'a guest house': 'in a guest house',
+    'a campsite': 'at a campsite',
+    friends: 'with friends'
+  };
+
+  $('trip-result').textContent = [
+    `For my vacation, I’d head to ${destination} because it’s ${$('reason').value}.`,
+    `I ${$('preference').value} ${$('activity').value} because I get to ${$('activity-reason').value}.`,
+    `When I travel, I prefer to go ${travel} because it’s ${$('transport-reason').value}.`,
+    `I’d choose to stay ${stays[accommodation]} because it’s ${$('stay-reason').value}.`
+  ].join('\n');
+}
 $('trip-form').addEventListener('submit',e=>{e.preventDefault();buildTrip();});buildTrip();
 async function init(){try{const response=await fetch('data/lesson.json?v=reading-scanning-1');if(!response.ok)throw Error('load');const lesson=await response.json();
  for(const review of lesson.reviews){const a=document.createElement('article'),label=document.createElement('div'),body=document.createElement('div'),h=document.createElement('h3'),p=document.createElement('p');label.className='review-label';label.textContent=review.id;h.textContent=review.title;p.textContent=review.text;body.append(h,p);a.append(label,body);$('reviews').append(a);}
